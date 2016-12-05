@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DrawingView.h
 //  MagicDrawingSlate
 //
 //  Created by Suresh on 12/5/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DrawingView : UIView
 
 @end
-

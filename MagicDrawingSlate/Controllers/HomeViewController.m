@@ -1,18 +1,25 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  MagicDrawingSlate
 //
 //  Created by Suresh on 12/5/16.
 //  Copyright © 2016 Suresh. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
+#import "DrawingView.h"
 
-@interface ViewController ()
-
+@interface HomeViewController ()
+@property (nonatomic, strong) DrawingView *drawingView;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
+
+- (void)loadView {
+    _drawingView = [[DrawingView alloc] init];
+    _drawingView.backgroundColor = [UIColor whiteColor];
+    self.view = _drawingView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
